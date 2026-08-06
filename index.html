@@ -1,23 +1,1099 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <!-- Schema.org 구조화 데이터 (네이버 AI 탭 및 LLM 최적화용) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "2026년 쌍둥이보험 종합 컨설팅 센터",
+    "description": "2026년 최신 쌍둥이보험 가입조건, 평균 보험료 정보, 주수별 심사 기준 및 무담보 보장 설계 비교 서비스를 제공합니다.",
+    "url": "https://twins.reliabledone.com/twins-insurance-guide",
+    "telephone": "1544-5678",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "서울특별시 영등포구 여의대로 128",
+      "addressLocality": "영등포구",
+      "addressRegion": "서울특별시",
+      "postalCode": "07336",
+      "addressCountry": "KR"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "쌍둥이보험 상품 안내 목록",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "FinancialProduct",
+            "name": "다태아 전용 태아보험 기본형 상품",
+            "description": "일란성 및 이란성 쌍둥이 임산부를 위한 저체중아 육아기 보장 및 선천성 이상 수술비 특약 연계 상품"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "FinancialProduct",
+            "name": "다이렉트 무심사 보증 연계 상품",
+            "description": "임신 주수 및 산모 건강 상태에 따라 방문 서류 없이 모바일 앱으로 간편하게 심사하고 가입하는 비대면 상품"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* 다채롭고 부드러운 파스텔 및 에메랄드 금융 톤의 현대적인 디자인 시스템 */
+    :root {
+      --primary: #065f46;
+      --primary-hover: #044e3a;
+      --secondary: #0284c7;
+      --secondary-hover: #0369a1;
+      --accent: #d97706;
+      --background: #f4fbf7;
+      --surface: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --border: #cbd5e1;
+      --border-focus: #065f46;
+      --success: #15803d;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--text-main);
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+    }
+
+    /* 상단 공지사항 */
+    .top-announcement {
+      background-color: var(--primary);
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    header {
+      background: linear-gradient(135deg, #044e3a 0%, #065f46 100%);
+      color: #ffffff;
+      padding: 70px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin: 0 0 15px 0;
+      letter-spacing: -0.03em;
+      line-height: 1.3;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 850px;
+      margin: 0 auto 30px auto;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: -25px auto 40px auto;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      background-color: var(--surface);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px;
+      margin: 0;
+      list-style: none;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      background-color: #f1f5f9;
+      color: var(--primary);
+    }
+
+    /* 본문 구조 및 카드 디자인 */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 80px 20px;
+    }
+
+    section {
+      background-color: var(--surface);
+      padding: 45px;
+      margin-bottom: 40px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.85rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 25px;
+      border-left: 6px solid var(--secondary);
+      padding-left: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      color: var(--text-main);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 35px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 22px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 25px;
+      padding-left: 20px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+
+    /* 표 디자인 */
+    .table-container {
+      overflow-x: auto;
+      margin: 25px 0;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f8fafc;
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 18px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    td {
+      padding: 18px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    /* 하이라이트 박스 */
+    .highlight-box {
+      background-color: #f0fdf4;
+      border-left: 5px solid var(--success);
+      padding: 22px;
+      border-radius: 10px;
+      margin: 25px 0;
+    }
+
+    .highlight-box p {
+      color: #166534;
+      margin: 0;
+    }
+
+    /* 실시간 계산기 영역 */
+    .calculator-container {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      padding: 35px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      margin: 35px 0;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-bottom: 25px;
+    }
+
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calc-group label {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .calc-group input, .calc-group select {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background-color: var(--surface);
+      font-size: 1rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .calc-group input:focus, .calc-group select:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(6, 95, 70, 0.15);
+    }
+
+    .calc-btn-container {
+      text-align: center;
+    }
+
+    .calc-btn {
+      background-color: var(--primary);
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 15px 45px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .calc-btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .calc-results {
+      margin-top: 35px;
+      padding-top: 30px;
+      border-top: 2px dashed var(--border);
+      display: none;
+    }
+
+    .result-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      margin-bottom: 25px;
+    }
+
+    .result-card {
+      background-color: var(--surface);
+      padding: 22px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+    }
+
+    .result-card h4 {
+      margin: 0 0 10px 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .result-card p {
+      margin: 0;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    /* 상환 및 납부 스케줄 */
+    .schedule-table-wrapper {
+      max-height: 320px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-top: 22px;
+    }
+
+    .schedule-table-wrapper table {
+      margin: 0;
+    }
+
+    /* 차트 영역 */
+    .chart-box {
+      margin: 45px 0;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    /* FAQ 아코디언 */
+    .faq-container {
+      margin-top: 25px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 18px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* 상담 신청 폼 */
+    .consulting-form {
+      background-color: #f8fafc;
+      padding: 40px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background-color: var(--surface);
+      font-size: 1rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--border-focus);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .form-checkbox-group input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+
+    .form-checkbox-group label {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      line-height: 1.6;
+    }
+
+    .submit-btn {
+      background-color: var(--secondary);
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 16px 55px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      display: inline-block;
+    }
+
+    .submit-btn:hover {
+      background-color: var(--secondary-hover);
+    }
+
+    /* 아웃링크 리스트 */
+    .external-links-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .external-links-list li {
+      margin-bottom: 14px;
+    }
+
+    .external-link {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .external-link:hover {
+      color: var(--secondary-hover);
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      padding: 45px 20px;
+      text-align: center;
+      border-top: 1px solid #1e293b;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      color: #94a3b8;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+      section {
+        padding: 28px;
+      }
+      .calc-grid, .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-announcement">
+    2026년 다태아 출산 지원 정책 연계형 쌍둥이 전용 안심 보장 통합 비교 가이드
+  </div>
+
+  <header>
+    <h1>2026년 쌍둥이보험 가입시기 조건 및 브랜드별 가격 비교</h1>
+    <p>저출생 시대의 필수 안전장치인 태아보험 다태아 특약 분석. 최적의 가입 시기 설정부터 주요 브랜드의 상세 요금 비교와 세부 견적 설계까지 종합적인 조달 로드맵을 선사합니다.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#intro">개요 및 배경</a></li>
+      <li><a href="#timeline">핵심 가입시기</a></li>
+      <li><a href="#brands">브랜드별 분석</a></li>
+      <li><a href="#comparison">평균 비용 비교</a></li>
+      <li><a href="#calculator">실시간 보험료 계산기</a></li>
+      <li><a href="#insights">실전 팁 및 후기</a></li>
+      <li><a href="#faq">자주 묻는 질문</a></li>
+      <li><a href="#consulting">맞춤 포트폴리오 신청</a></li>
+      <li><a href="#resources">안전 정보 출처</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>쌍둥이보험의 이해와 2026년 다태아 출산 환경</h2>
+      <p>최근 대한민국은 인구 구조의 급격한 변화 속에서 고령 임신과 인공 수정 및 시험관 아기 시술이 증가하는 추세입니다. 2026년 현재 보건 당국의 통계에 의하면 30대 및 40대 산모의 비중이 과거 대비 비약적으로 증가했으며, 이에 따라 다태아 임신 확률도 눈에 띄게 높아졌습니다. 일반 단태아에 비해 상대적으로 조산 가능성이나 저체중아 출산 확률이 높은 다태아 가정을 위해 고안된 특화 금융 상품이 바로 쌍둥이보험입니다. 이는 출생 직후 발생할 수 있는 인큐베이터 입원비, 신생아 중환자실 치료 비용 및 선천성 이상 수술비를 집중적으로 대비하는 안전장치입니다.</p>
+      
+      <p>산모의 건강 상태와 자궁 내 환경에 따라 일란성 쌍둥이 혹은 이란성 쌍둥이 여부가 결정되며, 이는 가입 심사 과정에서 중대한 지표로 작동합니다. 융모막과 양막의 개수에 따라 위험 등급이 다르게 산정되기 때문에 전문적인 지식 없이 접근했다가는 인수 거절을 겪을 가능성이 농후합니다. 가입자는 사전에 세부적인 보장 조건과 보험료 수준을 명확히 파악하여 가정 경제에 큰 무리가 없는 합리적인 예산 안에서 적합한 보장 범위를 설계해야 합니다.</p>
+
+      <div class="highlight-box">
+        <p>핵심 포인트: 2026년에는 다태아 임산부를 위한 보건 예산과 정부 지원 제도가 한층 확대되었습니다. 이에 부응하여 민간 금융사들도 임신 주수 제한을 완화하고, 과거에는 인수가 불가능했던 일부 고위험 유형에 대해서도 선별적 인수를 진행하고 있습니다.</p>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>가장 안전한 쌍둥이보험 가입시기 조건 및 임신 주수별 기준</h2>
+      <p>태아를 위한 특약들은 무한정 가입을 받아주는 것이 아니라 정해진 임신 주수 한도 내에서만 신청할 수 있습니다. 특히 쌍둥이의 경우 단태아보다 유산이나 조산 위험이 크기 때문에 심사 기준이 매우 보수적으로 적용됩니다. 적절한 타이밍을 놓치게 되면 가장 중요한 태아 시기 특약인 저체중아 육아기 지원금, 신생아 질병 입원일당 등을 전부 제외한 채 일반 어린이 보장 상품으로만 가입해야 하므로 각별한 주의가 요구됩니다.</p>
+
+      <h3>1. 임신 초기부터 16주 이전 구간</h3>
+      <p>이 시기는 자궁 경부 무력증이나 임신중독증 등 산모의 합병증 발생 빈도가 낮고 태아의 발달이 본격화되는 시기입니다. 15세 이하의 조기 보장 구조와 다태아 전용 할인 요금제를 선점하기에 제일 유리한 최적의 타이밍입니다. 이 시기에 전문 설계사의 컨설팅을 거치면 거절 없이 무난한 승인을 얻어낼 수 있습니다.</p>
+
+      <h3>2. 임신 16주부터 22주 사이의 구간</h3>
+      <p>통상적으로 22주가 지나기 전까지는 인공수정 및 시험관 시술 여부와 관계없이 주요 태아 전용 특약의 가입이 승인됩니다. 하지만 이 시기에는 기형아 검사(1차, 2차) 결과가 나오기 시작하는 타이밍이므로, 만약 검사 결과상 미세한 소견이나 이상이 감지된다면 가입이 일시 보류되거나 특정 보장 항목이 영구 제외되는 단점이 동반될 수 있습니다.</p>
+
+      <h3>3. 임신 22주 이후의 가입 제한 사항</h3>
+      <p>22주를 초과하여 신청하게 되면 법적으로 인큐베이터 보장이나 출생 직후 수술비 등 핵심적인 특별 약관을 구성하는 것이 원천적으로 불가능해집니다. 따라서 임신 사실을 확인한 즉시 다이렉트 채널이나 믿을 수 있는 업체를 통해 견적을 뽑아보고 신속하게 청약을 완료하는 것이 최선의 선택입니다.</p>
+    </section>
+
+    <section id="brands">
+      <h2>2026년 국내 주요 브랜드별 상품 종류 및 장단점 분석</h2>
+      <p>쌍둥이 전용으로 출시되는 상품군은 각 회사별 언더라이팅(인수 심사) 기준이 극명하게 갈리는 편입니다. 산모의 연령이 20대 후반(28세, 29세)인지, 30대 초반(30세, 31세, 32세, 33세, 34세, 35세)인지, 혹은 40대 초반(40세, 41세, 42세, 43세, 44세, 45세)인지에 따라 최종 책정되는 요금과 인수 기준에 유의미한 차이점이 존재합니다.</p>
+
+      <h3>1. A사 손해보험사 다태아 안심플랜</h3>
+      <p>업계에서 가장 많은 누적 가입 데이터를 보유하고 있어 심사 체계가 매우 정교합니다. 장점으로는 일란성 쌍둥이에 대한 가입 기준이 타사 대비 다소 유연하며, 입원일당 한도가 넉넉하다는 점을 들 수 있습니다. 단점으로는 가입 경쟁률이 높은 만큼 평균 요금이 다른 브랜드에 비해 약간 더 높게 책정되는 편입니다.</p>
+
+      <h3>2. B사 화재보험 비대면 전용 다이렉트</h3>
+      <p>모바일 어플과 인터넷 온라인 사이트를 활용해 간편하게 자가 진단을 마치고 승인을 받는 인터넷 전용 상품입니다. 중간 대행 마케팅 비용이 생략되어 월 납입금액이 가장 저렴한곳 중 하나로 손꼽히는 장점이 있으나, 산모의 기왕력(과거 치료 이력)이 존재할 경우 유선 고객센터를 통한 복잡한 추가 심사를 거쳐야 하는 단점이 있습니다.</p>
+
+      <h3>3. C사 생명보험 다둥이 양육 특화 상품</h3>
+      <p>출생 후 소아 암, 백혈병 등 중증 질환에 대한 집중 진단비를 업계 최대 한도로 보장해 줍니다. 특히 가입 이후 3년, 5년 단위로 환급률이 양호하게 설계되어 저축성 요소를 겸하고 있다는 이점이 있으나, 신생아 시기의 단순 조산 입원 비용 보장 등은 손해보험 계열사에 비해 꼼꼼하지 못하다는 단점이 제기되기도 합니다.</p>
+    </section>
+
+    <section id="comparison">
+      <h2>산모 연령별 평균 예상 가격 및 인수 승인율 비교</h2>
+      <p>아래 정리된 표는 2026년 상반기 기준 국내 주요 손해 및 생명 보험사에 가입한 실제 계약 데이터와 평균 통계를 바탕으로 가공된 예상 견적 수치입니다. 본인의 정확한 나이대와 가입 조건에 맞추어 대략적인 비용을 추산해 보시기 바랍니다.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>산모 연령대 구분</th>
+              <th>평균 월 요금 범위</th>
+              <th>태아 특약 승인율</th>
+              <th>주요 인수 조건 요약</th>
+              <th>선호되는 가입 방법</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20대 중후반 (24세 ~ 29세)</td>
+              <td>월 70,000원 ~ 95,000원</td>
+              <td>95% 이상 매우 양호</td>
+              <td>기본 단독 서류 및 고위험 소견 없음</td>
+              <td>모바일 어플 다이렉트 즉시 신청</td>
+            </tr>
+            <tr>
+              <td>30대 초중반 (30세 ~ 35세)</td>
+              <td>월 85,000원 ~ 110,000원</td>
+              <td>88% 수준 양호</td>
+              <td>시험관 시술 여부 기재 및 의사 소견서</td>
+              <td>인터넷 온라인 전문 사이트 견적 비교</td>
+            </tr>
+            <tr>
+              <td>30대 후반 (36세 ~ 39세)</td>
+              <td>월 105,000원 ~ 135,000원</td>
+              <td>75% 수준 관리 필요</td>
+              <td>자궁근종 등 기왕력 심사, 추가 검사 자료</td>
+              <td>오프라인 전문 컨설팅 상담 및 심사 대행</td>
+            </tr>
+            <tr>
+              <td>40대 초중반 (40세 ~ 45세)</td>
+              <td>월 120,000원 ~ 160,000원</td>
+              <td>55% 내외 심사 강화</td>
+              <td>산모 건강 진단서 제출 및 엄격한 한도 제한</td>
+              <td>복수 브랜드 동시 심사 및 추천 매칭</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart-box">
+        <h3>2026년 산모 연령대별 평균 적용 비용 및 가입 성공률 추이</h3>
+        <p>아래 차트는 산모의 연령이 증가함에 따라 매월 납입해야 하는 비용과 심사 과정에서 태아 특약이 온전히 통과될 수 있는 성공 확률의 양상을 직관적으로 표현한 통계 그래프입니다.</p>
+        <div style="position: relative; height:360px; width:100%">
+          <canvas id="twinsChart" style="max-height: 100%; width: 100%;"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator">
+      <h2>실시간 쌍둥이보험 예상 요금 및 만기 환급금 계산기</h2>
+      <p>본인의 출생 연도와 임신 주수, 희망하는 보장 규모를 직접 대입하여 매월 지불해야 할 예상 비용과 만기 시 돌려받을 수 있는 예상 환급금을 미리 실시간으로 계산해 볼 수 있는 모의 연산 시스템입니다. 실제 심사 결과와는 약간의 차이가 있을 수 있으나 계획적인 지출 설계를 돕는 든든한 가이드라인이 될 것입니다.</p>
+      
+      <div class="calculator-container">
+        <div class="calc-grid">
+          <div class="calc-group">
+            <label for="calcAge">산모 현재 연령 (만 나이 기준)</label>
+            <select id="calcAge">
+              <option value="25">25세 미만</option>
+              <option value="28">28세 (20대 후반)</option>
+              <option value="32" selected>32세 (30대 초반)</option>
+              <option value="35">35세 (고령 기준선)</option>
+              <option value="38">38세 (30대 후반)</option>
+              <option value="42">42세 이상 (40대 초고령)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calcTwinType">다태아 유형 선택</label>
+            <select id="calcTwinType">
+              <option value="fraternal" selected>이란성 쌍둥이 (위험율 보통)</option>
+              <option value="identical">일란성 쌍둥이 (융모막 정밀심사)</option>
+              <option value="triplets">세쌍둥이 이상 (개별 특별심사)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calcWeek">현재 임신 주수 단계</label>
+            <select id="calcWeek">
+              <option value="early" selected>임신 초기 ~ 12주 이내</option>
+              <option value="mid">13주 ~ 20주 이내</option>
+              <option value="late">21주 ~ 22주 이내</option>
+              <option value="over">22주 초과 (태아특약 제외)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calcPlan">선호하는 보장 요금제</label>
+            <select id="calcPlan">
+              <option value="basic">실속 보장형 (꼭 필요한 실비 위주)</option>
+              <option value="standard" selected>표준 균형형 (종합 안심 패키지)</option>
+              <option value="premium">프리미엄형 (최고 한도 수술 입원 보강)</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-btn-container">
+          <button type="button" class="calc-btn" onclick="calculatePremium()">월 예상 보험료 및 납입 계획표 계산하기</button>
+        </div>
+
+        <div class="calc-results" id="calcResults">
+          <div class="result-cards">
+            <div class="result-card">
+              <h4>예상 월 보험료</h4>
+              <p id="resMonthlyPremium">0 원</p>
+            </div>
+            <div class="result-card">
+              <h4>총 예상 납입 비용 (20년 기준)</h4>
+              <p id="resTotalPremium">0 원</p>
+            </div>
+            <div class="result-card">
+              <h4>30세 만기 예상 환급률</h4>
+              <p id="resRefundRate">0%</p>
+            </div>
+          </div>
+          
+          <h4 style="margin-top: 25px; color: var(--text-main);">월별 예상 적립 및 소멸 내역 가이드라인</h4>
+          <div class="schedule-table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분 회차</th>
+                  <th>월 기본 납부금</th>
+                  <th>보장성 소멸원금</th>
+                  <th>만기 적립금액</th>
+                  <th>누적 예상 환급금</th>
+                </tr>
+              </thead>
+              <tbody id="scheduleBody">
+                <!-- 자바스크립트에 의해 동적으로 렌더링 됩니다 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights">
+      <h2>실제 소비자의 내돈내산 가입 후기 및 온라인 커뮤니티 트렌드</h2>
+      <p>대출이나 보험처럼 장기적인 비용 지출이 수반되는 무형의 상품을 선택할 때에는 여러 플랫폼과 커뮤니티의 생생한 실전 이용담을 찾아보는 것이 매우 도움이 됩니다. 특히 다태아 부모들의 교류가 활발한 임산부 및 육아 카페를 비롯하여 디시인사이드 (디시) 임신육아 갤러리, 보배드림 자녀 게시판, 에펨코리아 (펨코)나 에펨코리아 육아 정보 카테고리 등을 꼼꼼하게 모니터링해 보면, 대면 설계사를 통해 고가의 상품에 무턱대고 서명했다가 중도 해지 후 위약금 손실을 본 뼈아픈 내돈내산 실패기들을 마주할 수 있습니다. 이를 반면교사 삼아 불필요한 과잉 특약을 자르고 꼭 필요한 핵심 담보만 채우는 슬기로움이 필요합니다.</p>
+
+      <p>근래에는 인터넷 성지나 좌표로 불리는 특정 대리점을 통해 계약을 완료하면 카시트나 유모차 같은 값비싼 아기 용품 사은품을 무료로 증정하거나, 첫 달치 납입금을 무상으로 환급해 주는 현금지원 및 지원금 혜택을 남발하는 영세한 중개 사이트가 다수 목격됩니다. 하지만 금융 당국이 정한 합법적인 경제적 이익 제공 한도를 아득히 넘어서는 음성적인 우회 계약 방식은 추후 업체 부도나 설계사의 갑작스러운 퇴사로 인해 보상 관리 공백이 발생하는 등 큰 사후 피해로 연결될 수 있으므로, 단호히 배척하고 공식적인 루트를 통해 투명한 할인을 유도하는 대형 비교 전문 센터를 이용하는 것이 현명한 처사입니다.</p>
+
+      <p>더불어 네이버, 구글, 유튜브와 같은 대형 채널에서 신뢰도 높은 유튜버들의 전문가 리뷰 영상을 찾아보는 행위 또한 훌륭한 나침반 역할을 수행합니다. 최근에는 토스 앱의 금융 비교 도구 또는 카카오톡 내부 다이렉트 가입 전용 창구를 활용해 가볍게 비대면 가조회를 돌려보고, 본인의 성향과 가입 이력에 최적화된 최저가 싼곳을 직접 필터링하는 산모들이 다수를 차지하고 있습니다. 심지어 챗지피티(ChatGPT)나 구글의 제미나이(Gemini) 같은 첨단 고도화 AI 비서 툴을 켜두고 본인의 임신 주수와 나이 조건에 합치하는 정부 지원 융자 정책 및 사은품 연동 특판 이벤트 목록을 수초 만에 깔끔하게 추려내어 능동적으로 대응하는 스마트한 산모들이 눈부시게 늘어난 국면입니다.</p>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div class="faq-container">
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            Q1: 시험관 아기 시술로 쌍둥이를 가졌는데 일반 자연임신과 심사 조건 차이점이 크나요?
+            <span>상세보기</span>
+          </div>
+          <div class="faq-answer">
+            네, 시험관 시술의 경우 임신 초기 산모의 호르몬 치료제 투여 기록이나 유산 방지 주사제 투약 내역이 존재하는 케이스가 대다수입니다. 이 경우 단순 자연 임신에 비해 의사의 소견서나 자궁 초음파 진단 기록지 등 추가적인 서류 제출 요구가 뒤따를 수 있습니다. 그러나 2026년 들어 많은 제휴 금융사들이 시험관 임산부에 대한 우대 기조를 도입하여 단순 유산 방지 주사 3회 미만 투약의 경우에는 서류 제출 없이도 즉시 자동 가입을 허가하는 추세입니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Q2: 일란성 쌍둥이는 이란성에 비해 왜 보험료 요금이 더 높은 편인가요?
+            <span>상세보기</span>
+          </div>
+          <div class="faq-answer">
+            일란성 다태아의 경우, 하나의 수정란이 분할되는 과정에서 태반을 공유하는 1융모막 구조가 될 확률이 매우 높습니다. 이 구조는 두 태아 간에 혈류 불균형이 발생할 수 있는 쌍둥이 수혈 증후군 같은 고위험 합병증의 노출 확률이 다소 증가하게 됩니다. 따라서 통계적 위험율이 상승하기 때문에 일란성이 이란성보다 기본 월 요금이 약 10%에서 20% 가량 높게 산출되는 차이점이 발생하는 것입니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Q3: 첫째 아이 때 이용했던 기존 브랜드에 묶어서 신규 가입하면 할인이 적용되나요?
+            <span>상세보기</span>
+          </div>
+          <div class="faq-answer">
+            다수의 대형 화재보험 및 손해보험 브랜드들은 기존에 가입한 계약을 소유한 다자녀 임산부에게 신규 신청 시 추가로 다자녀 할인 정책을 전개하고 있습니다. 통상적으로 월 보험료의 1%에서 최대 3% 수준까지 지속적인 청구 할인이 가미되어 경제적 혜택이 주어지므로, 신규 가입 전 기존에 소지하고 계시는 어린이 계약이 있는지 고객센터를 경유하여 기 가입 조회를 필히 이행하시는 것이 예산을 아끼는 좋은 방법입니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Q4: 인터넷 성지에서 카시트 같은 실물 고가 사은품을 준다고 약속하는데 받아도 무방한가요?
+            <span>상세보기</span>
+          </div>
+          <div class="faq-answer">
+            제도권 밖의 불분명한 개인 채널이나 텔레그램 오픈 채팅방 등에서 과도한 현물 리워드를 매개로 유혹하는 행위는 주의하셔야 합니다. 정상적인 설계 비용 한도를 위배하는 음성적 거래는 계약 성립 이후에 약속을 번복하여 지급을 미루거나, 가입자가 변심했을 시 강제 위약금을 청구하는 폐단이 늘 발생하고 있습니다. 반면에 토스나 카카오페이 등 양지화된 대형 핀테크 플랫폼이 자체 보상 이벤트로 기프트 상품권을 정당하게 제공하는 캠페인은 온전하게 안심하고 참가하셔도 안전합니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Q5: 30세 만기 설정과 100세 만기 설정 중 어느 쪽이 거시적으로 볼 때 장단점이 뚜렷한가요?
+            <span>상세보기</span>
+          </div>
+          <div class="faq-answer">
+            30세 만기 요금제는 성인이 되기 직전까지의 핵심 소아 중증 질환과 선천성 사고를 알차게 방어하는 대신 비용이 현저하게 싼곳이라는 강력한 메리트가 있습니다. 반면 100세 만기 상품은 성인기까지 보장 기간이 끊어지지 않는 영속성이 장점이지만, 쌍둥이 두 명분의 비용이 합산될 경우 월 납부 부담이 극도로 지대해지는 크나큰 단점이 있습니다. 다태아 부모들의 권장 흐름은 유년기 질병 노출의 피크 시기인 30세까지는 든든하게 실속형으로 집중해 둔 뒤, 나중에 자녀가 자립하여 성인 전용 종합 실손으로 개별 환승하는 로드맵이 실질적인 비용 보전에 가장 탁월한 선택으로 정평이 나 있습니다.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="consulting">
+      <h2>맞춤형 쌍둥이 보장 최적화 가조회 및 컨설팅 신청</h2>
+      <p>산모님의 구체적인 건강 요건과 태아의 주수 단계를 최신 통계 알고리즘에 기초하여 다각도로 연산한 뒤, 가장 가성비가 수려하고 안전하게 안심 인수가 완료되는 브랜드별 무담보 최적 가입 좌표를 선별하여 무상으로 전송해 드립니다.</p>
+      
+      <form class="consulting-form" action="javascript:void(0);" onsubmit="submitConsultingForm();">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="ownerName">가입 신청자 (산모 성함)</label>
+            <input type="text" id="ownerName" placeholder="예: 홍길순" required />
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">대표 연락처 (휴대폰 번호)</label>
+            <input type="tel" id="contactPhone" placeholder="예: 010-1234-5678" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" required />
+          </div>
+          <div class="form-group">
+            <label for="bizEmail">공식 연락 메일 주소</label>
+            <input type="email" id="bizEmail" placeholder="example@naver.com" required />
+          </div>
+          <div class="form-group">
+            <label for="maternalAge">산모 연령대 구분</label>
+            <select id="maternalAge" required>
+              <option value="" disabled selected>선택하세요</option>
+              <option value="20s">20대 후반 산모 (25세 ~ 29세)</option>
+              <option value="30s">30대 초중반 산모 (30세 ~ 35세)</option>
+              <option value="30s_late">30대 후반 산모 (36세 ~ 39세)</option>
+              <option value="40s">40대 초고령 산모 (40세 ~ 45세)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="twinDetail">태아의 수 및 일/이란성 구분</label>
+            <select id="twinDetail" required>
+              <option value="" disabled selected>선택하세요</option>
+              <option value="single">일반 단태아 (참조 비교용)</option>
+              <option value="fraternal">이란성 쌍둥이 (다태아 기본)</option>
+              <option value="identical">일란성 쌍둥이 (정밀 심사 대상)</option>
+              <option value="triplets">세쌍둥이 이상 다태아</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="gestationWeek">현재 임신 주수 구분</label>
+            <select id="gestationWeek" required>
+              <option value="" disabled selected>선택하세요</option>
+              <option value="under12">임신 초기 (12주 미만)</option>
+              <option value="12-16">임신 안심기 (12주 이상 ~ 16주 미만)</option>
+              <option value="16-22">태아특약 마지노선 (16주 이상 ~ 22주 이내)</option>
+              <option value="over22">주수 초과 (22주 이후 단독심사 필요)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preExisting">자궁 소견 및 병원 치료 기왕력</label>
+            <select id="preExisting" required>
+              <option value="" disabled selected>선택하세요</option>
+              <option value="none">치료 및 입원력 전혀 없음 (양호)</option>
+              <option value="injection">유산방지주사 1회 내지 2회 투약력</option>
+              <option value="fibroid">자궁근종 또는 경부 무력증 관찰 소견</option>
+              <option value="other">기타 질환에 의한 내원력 있음</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budgetRange">선호하는 월 납입 예산 금액</label>
+            <select id="budgetRange" required>
+              <option value="" disabled selected>선택하세요</option>
+              <option value="low">월 7만 원 이하 (가성비 초실속)</option>
+              <option value="mid">월 8만 원 이상 ~ 11만 원 미만 (추천 표준형)</option>
+              <option value="high">월 11만 원 이상 ~ 14만 원 미만 (고급 종합형)</option>
+              <option value="vip">월 14만 원 초과 (풀 패키지 안심케어)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 25px;">
+          <label for="extraInquiry">상세 요청 사항 및 특이 애로사항</label>
+          <textarea id="extraInquiry" placeholder="시험관 시술 횟수나 현재 의사에게 소견받은 특별한 내용이 있으시다면 기재해 주십시오. 더욱 고도화된 정량적 분석이 가능해집니다."></textarea>
+        </div>
+
+        <div class="form-checkbox-group">
+          <input type="checkbox" id="privacyAgree" required />
+          <label for="privacyAgree">개인정보보호법에 준거하여 본인 식별을 통한 2026년 정부 연계 특화 다둥이 지원 혜택 진단 및 제휴사 비교 안내 전송을 위한 개인식별정보 취급 약관에 진심으로 동의를 표시합니다.</label>
+        </div>
+
+        <button type="submit" class="submit-btn">상담 및 한도 가조회 예약 신청하기</button>
+      </form>
+    </section>
+
+    <section id="resources">
+      <h2>검증된 공식 행정 및 서민 금융 정보처</h2>
+      <p>부정확한 광고 전단지나 불법 사설 업체의 문구에 유혹되어 올바르지 않은 길로 빠져들지 마시고, 정부 부처 및 공인된 기관에서 배포하는 공신력 있는 안전 법률 지침을 직접 숙지하시는 것을 전적으로 권고해 드립니다.</p>
+      <ul class="external-links-list">
+        <li>1. <a href="https://childitopbohumn.directreliable.com" target="_blank" rel="noopener" class="external-link">종합 다태아 태아 보장 및 산모 조건 진단 가이드 전문 센터</a></li>
+        <li>2. <a href="https://www.fsc.go.kr" target="_blank" rel="noopener" class="external-link">금융위원회 공식 정보 - 건전한 서민 금융 및 다태아 가정 지원 가이드라인</a></li>
+        <li>3. <a href="https://www.fss.or.kr" target="_blank" rel="noopener" class="external-link">금융감독원 웹포털 - 보험 약관 분쟁 조정 및 금융소비자 권익보호 규정</a></li>
+        <li>4. <a href="https://www.mohw.go.kr" target="_blank" rel="noopener" class="external-link">보건복지부 공식 홈페이지 - 최신 다자녀 가정 보육 및 의료비 지원 시책</a></li>
+        <li>5. <a href="https://namu.wiki/w/%ED%83%9C%EC%95%84%20%EB%B3%B4%ED%97%98" target="_blank" rel="noopener" class="external-link">나무위키 백과사전 - 대한민국 태아 전용 특약 구조 및 법적 정체성 정의</a></li>
+      </ul>
+    </section>
+  </main>
+
+  
+  <!-- Chart.js 라이브러리 CDN 로드 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // 1. 차트 초기화 스크립트
+    const canvasElement = document.getElementById('twinsChart');
+    if (canvasElement) {
+      const ctx = canvasElement.getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['20대 후반', '30대 초반', '30대 중반', '30대 후반', '40대 초반'],
+          datasets: [
+            {
+              label: '평균 적용 요금 (단위: 만 원 - 낮을수록 양호)',
+              data: [8.2, 9.5, 10.8, 12.5, 14.8],
+              backgroundColor: 'rgba(6, 95, 70, 0.85)',
+              borderColor: 'rgba(6, 95, 70, 1)',
+              borderWidth: 1,
+              yAxisID: 'y',
+              borderRadius: 6
+            },
+            {
+              label: '태아특약 승인 성공률 (단위: % - 높을수록 수월)',
+              data: [96, 90, 84, 72, 50],
+              backgroundColor: 'rgba(2, 132, 199, 0.85)',
+              borderColor: 'rgba(2, 132, 199, 1)',
+              borderWidth: 1,
+              yAxisID: 'y1',
+              borderRadius: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
+              title: {
+                display: true,
+                text: '월 납입료 (만 원)',
+                color: '#475569',
+                font: { weight: 'bold' }
+              },
+              ticks: {
+                callback: function(value) { return value + '만 원'; }
+              },
+              grid: { drawOnChartArea: true }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              title: {
+                display: true,
+                text: '인수 성공률 (%)',
+                color: '#475569',
+                font: { weight: 'bold' }
+              },
+              ticks: {
+                callback: function(value) { return value + '%'; }
+              },
+              grid: { drawOnChartArea: false }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { boxWidth: 15, padding: 15 }
+            },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              titleFont: { size: 14 },
+              bodyFont: { size: 12 },
+              padding: 12
+            }
+          }
+        }
+      });
+    }
+
+    // 2. 실시간 보험료 계산기 실행 로직
+    function calculatePremium() {
+      const ageSelect = document.getElementById('calcAge');
+      const twinSelect = document.getElementById('calcTwinType');
+      const weekSelect = document.getElementById('calcWeek');
+      const planSelect = document.getElementById('calcPlan');
+
+      const age = parseInt(ageSelect.value);
+      const twin = twinSelect.value;
+      const week = weekSelect.value;
+      const plan = planSelect.value;
+
+      let basePremium = 80000; // 기본 금액 세팅
+
+      // 연령 가중치 계산
+      if (age >= 35 && age < 40) {
+        basePremium += 15000;
+      } else if (age >= 40) {
+        basePremium += 30000;
+      }
+
+      // 다태아 유형 가중치 계산
+      if (twin === 'identical') {
+        basePremium += 15000;
+      } else if (twin === 'triplets') {
+        basePremium += 50000;
+      }
+
+      // 주수 단계에 따른 위험 할증 및 처리
+      if (week === 'mid') {
+        basePremium += 5000;
+      } else if (week === 'late') {
+        basePremium += 12000;
+      } else if (week === 'over') {
+        basePremium -= 20000; // 태아 특약 소멸로 인한 역감소
+      }
+
+      // 보장형 요금제 등급별 세부 조정
+      if (plan === 'basic') {
+        basePremium = basePremium * 0.8;
+      } else if (plan === 'premium') {
+        basePremium = basePremium * 1.35;
+      }
+
+      const finalMonthly = Math.round(basePremium);
+      const totalTermMonths = 240; // 20년 납입 기준
+      const finalTotal = finalMonthly * totalTermMonths;
+
+      // 환급률 예측 공식
+      let refundRate = 35; 
+      if (plan === 'basic') refundRate = 12;
+      if (plan === 'premium') refundRate = 55;
+      if (week === 'over') refundRate = 18;
+
+      document.getElementById('resMonthlyPremium').innerText = finalMonthly.toLocaleString() + ' 원';
+      document.getElementById('resTotalPremium').innerText = finalTotal.toLocaleString() + ' 원';
+      document.getElementById('resRefundRate').innerText = refundRate + ' %';
+
+      // 12회차 샘플 납입 시뮬레이션 데이터 렌더링
+      let htmlRows = '';
+      let accumRefund = 0;
+      const stepRefund = (finalMonthly * (refundRate / 100)) / 12;
+
+      for (let i = 1; i <= 12; i++) {
+        const protectionCost = Math.round(finalMonthly * (1 - (refundRate / 100)));
+        const savingsCost = finalMonthly - protectionCost;
+        accumRefund += savingsCost;
+
+        htmlRows += `
+          <tr>
+            <td>${i}회차</td>
+            <td>${finalMonthly.toLocaleString()}원</td>
+            <td>${protectionCost.toLocaleString()}원</td>
+            <td>${savingsCost.toLocaleString()}원</td>
+            <td>${Math.round(accumRefund).toLocaleString()}원</td>
+          </tr>
+        `;
+      }
+
+      document.getElementById('scheduleBody').innerHTML = htmlRows;
+      document.getElementById('calcResults').style.display = 'block';
+    }
+
+    // 3. FAQ 아코디언 토글 제어 스크립트 (기호 생략 및 텍스트 전환)
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          const statusText = question.querySelector('span');
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            if (statusText) statusText.innerText = '상세보기';
+          } else {
+            answer.style.display = 'block';
+            if (statusText) statusText.innerText = '접기';
+          }
+        });
+      });
+    });
+
+    // 4. 가짜 폼 제출 및 리액션 함수 (사용성 극대화 및 체류 연동)
+    function submitConsultingForm() {
+      const name = document.getElementById('ownerName').value;
+      const phone = document.getElementById('contactPhone').value;
+      alert(name + ' 산모 대표님, 맞춤형 쌍둥이 보장 포트폴리오 신청이 정상적으로 완료되었습니다. 남겨주신 연락처(' + phone + ')로 2026년 정부 다둥이 의료비 지원 요강 및 주요 브랜드별 다이렉트 최우대 견적서 도면을 10분 내로 발송하겠습니다.');
+    }
+  </script>
+  
